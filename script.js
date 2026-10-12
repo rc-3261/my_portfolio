@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const titles = [
         'Full-Stack Developer.',
         'Python Django Developer.',
-        'MCA Engineering Student.',
-        'Software Development Enthusiast.'
+        'MCA Student.',
+        'Software Developer.'
     ];
     let titleIndex = 0;
     let charIndex = 0;
