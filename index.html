@@ -417,30 +417,56 @@
                 </div>
 
                 <!-- Form Card -->
-                <div class="contact-form-card scroll-reveal slide-in-right">
-                    <h3>Send a Message</h3>
-                    <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Ritesh will receive your message soon.'); this.reset();">
-                        <div class="form-group">
-                            <label for="form-name">Name</label>
-                            <input type="text" id="form-name" required placeholder="Ritesh chaudhari ">
-                        </div>
-                        <div class="form-group">
-                            <label for="form-email">Email</label>
-                            <input type="email" id="form-email" required placeholder="ritesh_xyz@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="form-message">Message</label>
-                            <textarea id="form-message" required rows="5" placeholder="Let's build something together..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary width-full" id="form-submit-btn">
-                            <span>Send Message</span>
-                            <i data-lucide="send"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
+               
+<div class="contact-form-card scroll-reveal slide-in-right">
+    <h3>Send a Message</h3>
+
+    <form id="contact-form">
+
+        <div class="form-group">
+            <label for="form-name">Name</label>
+            <input
+                type="text"
+                id="form-name"
+                name="from_name"
+                required
+                placeholder="Ritesh Chaudhari" >
         </div>
-    </section>
+
+        <div class="form-group">
+            <label for="form-email">Email</label>
+            <input
+                type="email"
+                id="form-email"
+                name="from_email"
+                required
+                placeholder="ritesh_xyz@example.com" >
+        </div>
+
+        <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea
+                id="form-message"
+                name="message"
+                required
+                rows="5"
+                placeholder="Let's build something together..."
+            ></textarea>
+        </div>
+
+        <button type="submit"
+            class="btn btn-primary width-full"
+            id="form-submit-btn" >
+            <span>Send Message</span>
+            <i data-lucide="send"></i>
+        </button>
+
+        <p id="form-status" role="status"></p>
+
+    </form>
+</div>
+
+        
 
     <!-- Footer -->
     <footer class="footer">
